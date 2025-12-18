@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Support Our Cause</h1>
+        <p>Your donation makes a difference</p>
+        
+        <form id="donationForm">
+            <div class="form-group">
+                <label>Select Amount</label>
+                <div class="amount-buttons">
+                    <button type="button" class="amount-btn" data-amount="10">$10</button>
+                    <button type="button" class="amount-btn" data-amount="25">$25</button>
+                    <button type="button" class="amount-btn" data-amount="50">$50</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="customAmount">Custom Amount ($)</label>
+                <input type="number" id="customAmount" placeholder="Enter amount" min="1">
+            </div>
+
+            <div class="form-group">
+                <label for="donorName">Your Name</label>
+                <input type="text" id="donorName" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="donorEmail">Email Address</label>
+                <input type="email" id="donorEmail" placeholder="Enter your email" required>
+            </div>
+
+            <button type="submit" class="donate-btn">Donate Now</button>
+        </form>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
